@@ -102,7 +102,6 @@ body{
     overflow: hidden;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
-    height: 120vh;
 }
 .anime-img img{
     width: 100%;
@@ -191,7 +190,7 @@ body{
     height: 90%;
     overflow-y: scroll;
     padding: 2rem 0;
-   display: none;
+   /* display: none; */
 }
 .anime-details::-webkit-scrollbar{
     width: 10px;
@@ -211,13 +210,13 @@ body{
     display: block;
 }
 
-.quotes-details-content{
+.gif-details-content{
     margin: 2rem;
 }
-.quotes-details-content{
+.gif-details-content{
     padding: 1rem 0;
 }
-.quotes-close-btn{
+.gif-close-btn{
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -236,85 +235,16 @@ body{
     justify-content: center;
     opacity: 0.9;
 }
-.quotes-title{
-    letter-spacing: 1px;
-    padding-bottom: 1rem;
-}
-.characterclass{
-    font-weight: 600;
-    color: black;
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-}
 
-.quotes-list{
-    padding: 1rem 0;
-}
-.anime-quotes-img img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+
+.anime-gif-img img{
+   
+    border-radius: 5%;
+
     margin: 0 auto;
-    display: block;
-}
-
-
-.showFacts{
-    display: block;
-}
-
-.facts-details-content{
-    margin: 2rem;
-}
-.facts-details-content{
-    padding: 1rem 0;
-}
-.facts-close-btn{
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    font-size: 1.8rem;
-    background: #fff;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    flex-direction:row;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
-}
-.facts-title{
-    letter-spacing: 1px;
-    padding-bottom: 1rem;
-}
-.factsclass{
-    font-weight: 600;
-    color: black;
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-}
-
-.facts-list{
-    padding: 1rem 0;
+    margin-bottom: 10px;
 }
 
 
