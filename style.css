@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 :root{
     --tenne-tawny: #d65108;
@@ -217,29 +218,13 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 600px){
     .anime-search-box{
         width: 540px;
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 
@@ -261,4 +246,5 @@ body{
     #anime{
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
