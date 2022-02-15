@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+
 }
 :root{
     --tenne-tawny: #d65108;
@@ -80,6 +81,141 @@ body{
 .search-btn:hover{
     background: var(--tenne-tawny-dark);
 }
+/*Anime card*/
+.anime-result{
+    margin-top: 4rem;
+}
+.animecc{
+    display: inline-flex;
+    width: 100%;
+
+}
+#anime{
+    margin: 2.4rem 0;
+}
+.anime-item{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+.anime-img img{
+    width: 100%;
+    display: block;
+}
+.anime-name{
+    padding: 1.5rem 0.5rem;
+}
+.anime-name h3{
+    font-size: 1.4rem;
+}
+.anime-btn{
+    display: flex;
+}
+
+.qoutes-btn{
+    text-decoration: none;
+    color: #fff;
+    background: var(--tenne-tawny);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.qoutes-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
+.facts-btn{
+    text-decoration: none;
+    color: #fff;
+    background: var(--tenne-tawny);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.facts-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
+
+
+
+/* js related */
+.showQuotes{
+    display: block;
+}
+
+.quotes-details-content{
+    margin: 2rem;
+}
+.quotes-details-content{
+    padding: 1rem 0;
+}
+.quotes-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.quotes-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.quotes-list{
+    padding: 1rem 0;
+}
+.anime-quotes-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
 
 
 @media screen and (min-width: 600px){
@@ -88,4 +224,27 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+
+}
+
+
+@media screen and (min-width: 768px){
+    #anime{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .anime-item{
+        margin: 0;
+    }
+    .anime-details{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #anime{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
