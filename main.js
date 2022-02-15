@@ -24,15 +24,14 @@ window.onload = () => {
 
 submitBtn.addEventListener('click', ()=>{
     const animeName = input.value;
-    const factsUrl= `https://anime-facts-rest-api.herokuapp.com/api/v1/${animeName}` // img & fact
-   const quotesUrl= `https://animechan.vercel.app/api/quotes/character?name=${animeName}` //anime ,character ,quote
+    const mainUrl= `https://kitsu.io/api/edge/anime?filter%5Btext%5D=${animeName}` // posterImage.original & attributes.titles.en &synopsis
+   const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
 
-   const factsData = (obj1) =>{
+   const mainFun = (obj1) =>{
     //    console.log(obj1)
     //    obj1.forEach(e => {
     //        aImg.src = e.img
     //    });
-    // aImg.src = obj1.img
     // for (let i = 0; i < obj1.length; i++) {
 
     //      aImg.src = obj1.img
@@ -41,16 +40,16 @@ submitBtn.addEventListener('click', ()=>{
 
 
 
-//    const quotesData = (obj2) =>{
-//        console.log(obj2)
-//     //    obj2.data.forEach(e =>{
-//     //     aName.textContent = e.data.
-//     //    })
+   const galaryFun = (obj2) =>{
+       console.log(obj2)
+    //    obj2.data.forEach(e =>{
+    //     aName.textContent = e.data.
+    //    })
 
-//    }
+   }
 
-   fetch('GET' , factsUrl ,factsData)
-//    fetch('GET' , quotesUrl ,quotesData)
+   fetch('GET' ,  mainUrl ,mainFun)
+   fetch('GET' ,  galaryUrl ,galaryFun)
 })
 
 
