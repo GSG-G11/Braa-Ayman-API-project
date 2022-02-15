@@ -56,7 +56,7 @@ submitBtn.addEventListener('click', ()=>{
   aCard.appendChild(abuttDiv);
 
   const abutt = document.createElement('button');
-  abutt.classList.add('qoutes-btn');
+  abutt.classList.add('gifs-btn');
   abutt.textContent = "Galary"
   abuttDiv.appendChild(abutt);
 
