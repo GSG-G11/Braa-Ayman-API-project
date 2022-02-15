@@ -191,7 +191,7 @@ body{
     height: 90%;
     overflow-y: scroll;
     padding: 2rem 0;
-    display: none;
+   display: none;
 }
 .anime-details::-webkit-scrollbar{
     width: 10px;
@@ -214,7 +214,7 @@ body{
 .quotes-details-content{
     margin: 2rem;
 }
-.quotes-details-content p:not(.recipe-category){
+.quotes-details-content{
     padding: 1rem 0;
 }
 .quotes-close-btn{
@@ -266,6 +266,59 @@ body{
     margin: 0 auto;
     display: block;
 }
+
+
+.showFacts{
+    display: block;
+}
+
+.facts-details-content{
+    margin: 2rem;
+}
+.facts-details-content{
+    padding: 1rem 0;
+}
+.facts-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.facts-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.factsclass{
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.facts-list{
+    padding: 1rem 0;
+}
+
+
+
 
 @media screen and (min-width: 600px){
     .anime-search-box{
