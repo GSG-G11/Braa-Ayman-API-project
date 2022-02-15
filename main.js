@@ -4,6 +4,7 @@ const submitBtn = document.querySelector("#search-btn")
 const aImg = document.querySelector(".mainImg")
 const aName = document.querySelector(".mainName")
 const aAnime = document.querySelector("#anime")
+const aResult = document.querySelector(".anime-result")
 
 
 const fetch =(method,url,cb) =>{
@@ -25,6 +26,7 @@ window.onload = () => {
 };
 
 submitBtn.addEventListener('click', ()=>{
+    aResult.innerHTML='';
     const animeName = input.value;
     const mainUrl= `https://kitsu.io/api/edge/anime?filter%5Btext%5D=${animeName}` // posterImage.original & attributes.titles.en &synopsis
    const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
@@ -56,15 +58,13 @@ submitBtn.addEventListener('click', ()=>{
   aCard.appendChild(abuttDiv);
 
   const abutt = document.createElement('button');
-  abutt.classList.add('qoutes-btn');
+  abutt.classList.add('gifs-btn');
   abutt.textContent = "Galary"
   abuttDiv.appendChild(abutt);
 
     });
 
    }
-
-
 
 //    const galaryFun = (obj2) =>{
 //        console.log(obj2)
