@@ -15,6 +15,7 @@ body{
     font-size: 1.05rem;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
+    border: 5px solid #d65108;
 }
 /*  */
 .btn{
@@ -102,16 +103,24 @@ body{
     overflow: hidden;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
+    height: auto;
 }
 .anime-img img{
-    width: 100%;
+    width: 400px;
+    height: 360px;
     display: block;
 }
 .anime-name{
     padding: 1.5rem 0.5rem;
 }
 .anime-name h3{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
+}
+.synopsis{
+    display: block;
+    overflow-y: scroll;
+
+    height: 100px;
 }
 .anime-btn{
     display: flex;
@@ -139,33 +148,7 @@ body{
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
 }
-.qoutes-btn:hover{
-    background: var(--tenne-tawny-dark);
-}
-.facts-btn{
-    text-decoration: none;
-    color: #fff;
-    background: var(--tenne-tawny);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.75rem 0;
-    display: block;
-    width: 175px;
-    margin: 1rem auto;
-    border-color: #d65108;
-
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    transition: all 0.4s linear;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
-}
-.facts-btn:hover{
+.gifs-btn:hover{
     background: var(--tenne-tawny-dark);
 }
 
