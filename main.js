@@ -21,7 +21,7 @@ const fetch =(method,url,cb) =>{
 }
 
 window.onload = () => {
-    input.value = `bleach`;
+    input.value = `Aot`;
     submitBtn.click();
 };
 
@@ -51,6 +51,7 @@ submitBtn.addEventListener('click', ()=>{
 
  
   const atitle = document.createElement('h3');
+  const atitlee = document.createElement('br');
   atitle.textContent = e.attributes.titles.en_jp
   atitleDiv.appendChild(atitle);
 
