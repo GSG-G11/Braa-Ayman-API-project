@@ -95,7 +95,7 @@ else{
 
     submitBtn.addEventListener("click",()=>{
     //   return  mainFun();
-    window.location.reload();
+    // window.location.reload();
     })
 }
    }
