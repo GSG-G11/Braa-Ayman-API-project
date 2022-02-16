@@ -104,6 +104,8 @@ body{
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
     height: auto;
+    border: 5px solid#d65108;
+
 }
 .anime-img img{
     width: 400px;
@@ -114,13 +116,19 @@ body{
     padding: 1.5rem 0.5rem;
 }
 .anime-name h3{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    height: 50px;
+    margin-top: 20px;
 }
 .synopsis{
     display: block;
     overflow-y: scroll;
+    overflow: hidden;
+    height: 160px;
+    text-align: justify;
+   padding-right: 30px;
+   padding-left: 30px;
 
-    height: 100px;
 }
 .anime-btn{
     display: flex;
@@ -147,6 +155,8 @@ body{
     -moz-transition: all 0.4s linear;
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
+    margin-top: 35px;
+
 }
 .gifs-btn:hover{
     background: var(--tenne-tawny-dark);
