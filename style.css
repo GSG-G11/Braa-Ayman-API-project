@@ -237,6 +237,13 @@ ol {
     justify-content: center;
     opacity: 0.9;
 }
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: var(--tenne-tawny);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
 
 
 .anime-gif-img img{
