@@ -3,9 +3,11 @@ const input = document.querySelector("#search-input");
 const submitBtn = document.querySelector("#search-btn");
 const aImg = document.querySelector(".mainImg");
 const aName = document.querySelector(".mainName");
+const aResult = document.querySelector(".anime-result");
 const aAnime = document.querySelector("#anime");
 const animeDetails = document.querySelector(".anime-details");
 const animeCloseDe = document.querySelector("#gif-close-btn");
+const maintitle = document.querySelector(".mainTi");
 
 
 //fetch to create XML
@@ -36,6 +38,7 @@ submitBtn.addEventListener('click', ()=>{
     const mainUrl= `https://kitsu.io/api/edge/anime?filter%5Btext%5D=${animeName}` 
 
    const mainFun = (obj1) =>{
+  if(obj1.data.length !== 0){
     obj1.data.forEach(e => {
 
   const aCard = document.createElement('div');
@@ -76,8 +79,15 @@ submitBtn.addEventListener('click', ()=>{
   abutt.classList.add('gifs-btn');
   abutt.textContent = "Gallery"
   abuttDiv.appendChild(abutt);
-
     });
+
+}else{
+    aResult.innerHTML='';
+    const aNotFou = document.createElement('div');
+    aNotFou.classList.add('notFound');
+    aNotFou.textContent="Sorry, we didn't find any Anime!"
+    aResult.appendChild(aNotFou);
+}
    }
    fetch('GET' ,  mainUrl ,mainFun)
 }) 
