@@ -30,5 +30,5 @@ As a **User**
 ## ✧ Tech used
 - HTML 
 - CSS 
-- JS (DOM - Local Storge - testing)
+- JS
 - Api
