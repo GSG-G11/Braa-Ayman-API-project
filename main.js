@@ -6,10 +6,7 @@ const aName = document.querySelector(".mainName");
 const aAnime = document.querySelector("#anime");
 const aResult = document.querySelector(".anime-result");
 const animeDetails = document.querySelector(".anime-details");
-
-
-
-
+const animeCloseDe = document.querySelector("#gif-close-btn");
 
 
 
@@ -91,20 +88,20 @@ submitBtn.addEventListener('click', ()=>{
 aAnime.addEventListener("click", ()=>{
     const animeName = input.value;
  const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
- const popup = animeDetails.style.display='block'
+  animeDetails.style.display='block'
 
    const galaryFun = (obj2) =>{
     obj2.data.slice(-5).forEach(e => {
        console.log(obj2)
        console.log(e.images.downsized_medium.url)
 
-       const abtnDiv = document.createElement('button');
-       abtnDiv.classList.add('gif-close-btn','btn');
-       animeDetails.appendChild(abtnDiv);
+    //    const abtnDiv = document.createElement('button');
+    //    abtnDiv.classList.add('gif-close-btn','btn');
+    //    animeDetails.appendChild(abtnDiv);
 
-       const acloseDiv = document.createElement('i');
-       acloseDiv.classList.add('fas','fa-times');
-       abtnDiv.appendChild(acloseDiv);
+    //    const acloseDiv = document.createElement('i');
+    //    acloseDiv.classList.add('fas','fa-times');
+    //    abtnDiv.appendChild(acloseDiv);
 
        const aDetailsDiv = document.createElement('div');
        aDetailsDiv.classList.add('gif-details-content');
@@ -118,7 +115,14 @@ aAnime.addEventListener("click", ()=>{
        agifImage.src = e.images.downsized_medium.url;
        aGifDetailsDiv.appendChild(agifImage);
     });
+    
+    animeCloseDe.addEventListener("click",()=>{
+        animeDetails.style.display='None'
+    })
    }
+//    //delete details
+
+
   fetch('GET' ,  galaryUrl ,galaryFun)
 });
 
