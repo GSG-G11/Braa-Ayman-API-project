@@ -35,10 +35,12 @@ window.onload = () => {
 
 submitBtn.addEventListener('click', ()=>{
     const animeName = input.value;
+
     const mainUrl= `https://kitsu.io/api/edge/anime?filter%5Btext%5D=${animeName}` // posterImage.original & attributes.titles.en &synopsis
 
    const mainFun = (obj1) =>{
     obj1.data.forEach(e => {
+
   const aCard = document.createElement('div');
   aCard.classList.add('anime-item');
   aAnime.appendChild(aCard);
@@ -89,6 +91,7 @@ submitBtn.addEventListener('click', ()=>{
 aAnime.addEventListener("click", ()=>{
     const animeName = input.value;
  const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
+ const popup = animeDetails.style.display='block'
 
    const galaryFun = (obj2) =>{
     obj2.data.slice(-5).forEach(e => {
@@ -117,12 +120,6 @@ aAnime.addEventListener("click", ()=>{
     });
    }
   fetch('GET' ,  galaryUrl ,galaryFun)
-})
-
-// const GifFun = (obj1) =>{
-//     obj1.data.slice(-9).forEach(e => {
-        
-//     })};
-       
+});
 
 
