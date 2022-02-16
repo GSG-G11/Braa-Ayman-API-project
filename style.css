@@ -104,6 +104,8 @@ body{
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
     height: auto;
+    border: 5px solid#d65108;
+
 }
 .anime-img img{
     width: 400px;
@@ -126,6 +128,7 @@ body{
     text-align: justify;
    padding-right: 30px;
    padding-left: 30px;
+
 }
 .anime-btn{
     display: flex;
