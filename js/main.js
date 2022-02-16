@@ -34,7 +34,7 @@ const fetch =(method,url,cb) =>{
 
 // when page load the input value = Aot
 window.onload = () => {
-    input.value = `Aot`;
+    input.value = `Shingeki no Kyojin`;
     submitBtn.click();
 };
 
@@ -108,7 +108,7 @@ aAnime.addEventListener("click", ()=>{
  const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
   animeDetails.style.display='block'
    const galaryFun = (obj2) =>{
-    obj2.data.slice(-5).forEach(e => {
+    obj2.data.slice(-10).forEach(e => {
        console.log(obj2)
        console.log(e.images.downsized_medium.url)
 

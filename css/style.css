@@ -29,7 +29,14 @@ body{
 .text{
     opacity: 0.8;
 }
-.title ,.mainAnime{
+.title{
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: #d65108;
+    font-family: 'Lato thin', sans-serif;
+
+}
+ .mainAnime{
     font-size: 50px;
     margin-bottom: 1rem;
     color: #d65108;
@@ -169,7 +176,7 @@ ol {
     -webkit-border-radius: 2rem;
     transition: all 1s linear;
     margin-top: 35px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'poppies', sans-serif;
 
 }
 .gifs-btn:hover{
@@ -214,10 +221,6 @@ ol {
 }
 
 
-/* js related */
-.showQuotes{
-    display: block;
-}
 
 .gif-details-content{
     margin: 2rem;
@@ -315,7 +318,7 @@ nav {
     cursor: pointer;
     padding: 10px 15px !important;
     background-color: #d65108 !important;
-    border-radius: 5px 0px 5px 0 !important;
+    border-radius: 10px !important;
     font-size: 1.4rem;
     font-weight: bold;
     padding: 10px;
@@ -330,7 +333,7 @@ nav {
     font-weight: bold;
     padding: 10px 15px !important;
     background-color: white !important;
-    border-radius: 5px 0px 5px 0 !important;
+    border-radius: 10px !important;
   }
   .nav .btnlk a {
     text-decoration: none;
@@ -342,6 +345,8 @@ nav {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'lato black';
+
   }
 
   @media screen and (max-width: 450px){
