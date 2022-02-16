@@ -64,6 +64,7 @@ submitBtn.addEventListener('click', ()=>{
   aCard.appendChild(atitleDiv);
  
   const atitle = document.createElement('h3');
+  atitle.classList.add('mainAnime')
   atitle.textContent = e.attributes.titles.en_jp
   atitleDiv.appendChild(atitle);
 
@@ -87,16 +88,12 @@ submitBtn.addEventListener('click', ()=>{
 
 }
 else{
-    aResult.innerHTML='';
+    aAnime.innerHTML='';
     const aNotFou = document.createElement('div');
-    aResult.classList.add('notFound');
+    aNotFou.classList.add('notFound');
     aNotFou.textContent="Sorry, we didn't find any Anime!"
     aResult.appendChild(aNotFou);
 
-    submitBtn.addEventListener("click",()=>{
-    //   return  mainFun();
-    // window.location.reload();
-    })
 }
    }
    fetch('GET' ,  mainUrl ,mainFun)
@@ -129,7 +126,7 @@ aAnime.addEventListener("click", ()=>{
     });
     
    }
-  fetch('GET' ,  galaryUrl ,galaryFun)
+  fetch('GET' , galaryUrl ,galaryFun)
 });
 
     //delete details
