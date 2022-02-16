@@ -16,78 +16,41 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- style link -->
-  <link rel="stylesheet" href="./css/style.css">
-  <nav>
-    <div class="nav">
-        <a class="logo" href="index.html">AnimeSearch</a>
-        
-        <div class="btnlk">
-            <a href="home.html"><button>Home</button></a>
-            <a href="index.html"><button>Search</button></a>
-        </div>
-    </div>
-</nav>
+  <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
+  
+    <main>
+      <div class="big-wrapper">
 
-  <!-- search-box -->
-  <div class="container">
-    <div class="anime-wrapper">
-      <div class="anime-search">
-        
-        <div class="anime-search-box">
-          <input type="search" class="search-control" placeholder="Enter Anime Name" id="search-input" onkeypress="handle">
-          <button type="submit" class="search-btn btn" id="search-btn" >
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-<!-- end search-box -->
+<br>
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Find your favorite anime</h1>
+                
+              </div>
+                     <blockquote class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus eius distinctio odit, magni magnam qui ex perferendis
+                vitae!</blockquote> 
 
- <!-- Search Results -->
-<!-- Anime item -->
-       <div class="anime-result">
-        <h4 class="title mainTi" >Your Search Results:</h4>
-        <div id="anime">
-
-        <!--   <div class="anime-item">
-            <div class="anime-img">
-              <img class="mainImg" src="#" >
+              <div class="cta">
+                <a href="home.html" class="btn">Get started</a>
+              </div>
             </div>
-            <div class="anime-name">
-              <h3 class="mainAnime"></h3>
-<blockquote  class="synopsis"></blockquote>
-              <div class="anime-btn">
-             <button type="button" class="gifs-btn">Get Gifs</button>
-                </div>
-      </div>   -->
 
-          <!-- end of anime item -->
+            <div class="right">
+              <img src="imgs/avatar.png" alt="avatar Image" class="avatar" />
+            </div>
+          </div>
         </div>
+
+      
       </div>
+    </main>
 
-      <div class="anime-details">
-        
-        <!-- quotes close btn -->
-         <button type="button" class="btn gif-close-btn" id="gif-close-btn">
-          <i class="fas fa-times"></i>
-        </button>
 
-       <div class="gif-details-content">  
-          <!-- <div class="anime-gif-img">
-            <img src="anime.jpg" alt="">
-            <img src="img/22.gif" alt="">
-            <img src="img/33.gif" alt="">
-            <img src="img/44.gif" alt="">
-            <img src="img/55.gif" alt="">
-          </div>-->
-        </div> 
-
-  </div>
-</div>
-</div>
-
-  <script src="/js/main.js"></script>
-</body>
+  </body>
 </html>
