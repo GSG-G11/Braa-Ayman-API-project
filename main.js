@@ -25,11 +25,11 @@ window.onload = () => {
     submitBtn.click();
 };
 
+
+
 submitBtn.addEventListener('click', ()=>{
-   
     const animeName = input.value;
     const mainUrl= `https://kitsu.io/api/edge/anime?filter%5Btext%5D=${animeName}` // posterImage.original & attributes.titles.en &synopsis
-   const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
 
    const mainFun = (obj1) =>{
     obj1.data.forEach(e => {
@@ -77,14 +77,18 @@ submitBtn.addEventListener('click', ()=>{
 
    }
 
-//    const galaryFun = (obj2) =>{
-//        console.log(obj2)
-//     //    obj2.data.forEach(e =>{
-//     //     aName.textContent = e.data.
-//     //    })
-
-//    }
-
    fetch('GET' ,  mainUrl ,mainFun)
-//    fetch('GET' ,  galaryUrl ,galaryFun)
+
 })
+aAnime.addEventListener("click", ()=>{
+    const animeName = input.value;
+ const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
+
+   const galaryFun = (obj2) =>{
+       console.log(obj2)
+  
+
+   }
+  fetch('GET' ,  galaryUrl ,galaryFun)
+})
+
