@@ -17,6 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     border: 5px solid #d65108;
 }
+
 /*  */
 .btn{
     font-family: inherit;
@@ -31,7 +32,14 @@ body{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
+.AniFinder{
+    display: flex;
+}
+li,
+ul,
+ol {
+    list-style: none;
+}
 .container{
     min-height: 100vh;
 }
@@ -241,13 +249,7 @@ body{
     margin-bottom: 10px;
 }
 
-.notFound{
-    grid-template-columns: 1fr!important;
-    color: var(--tenne-tawny);
-    font-size: 1.8rem;
-    font-weight: 600;
-    width: 100%;
-}
+
 
 
 @media screen and (min-width: 600px){
@@ -278,5 +280,23 @@ body{
     #anime{
         grid-template-columns: repeat(3, 1fr);
     }
+    
 
 }
+
+
+
+
+
+@media screen and (max-width: 450px){
+    .anime-gif-img img{
+   
+        border-radius: 5%;
+    width: 300px;
+    }
+    
+
+}
+
+
+
