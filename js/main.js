@@ -112,10 +112,6 @@ aAnime.addEventListener("click", ()=>{
        console.log(obj2)
        console.log(e.images.downsized_medium.url)
 
-    //    const aDetailsDiv = document.createElement('div');
-    //    aDetailsDiv.classList.add('gif-details-content');
-    //    animeDetails.appendChild(aDetailsDiv);
-
        const aGifDetailsDiv = document.createElement('div');
        aGifDetailsDiv.classList.add('anime-gif-img');
        aDetailsDiv.appendChild(aGifDetailsDiv);
