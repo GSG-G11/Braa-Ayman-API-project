@@ -99,9 +99,6 @@ a {
   line-height: 2.3;
 }
 
-.showcase-area .btn {
-  box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
-}
 
 .avatar {
   width: 80%;
@@ -112,3 +109,37 @@ a {
 
 
 
+
+@media screen and (max-width: 450px){
+  img {
+    display: none;
+  }
+
+  .btn {
+    margin-bottom: 260px;
+    text-align: center;
+  }
+  
+ 
+  .big-title {
+    font-size: 1.25rem;
+    color:white;
+    text-transform: capitalize;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 160px;
+
+  }
+  
+  .text {
+    color: white;
+    font-size: 1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+    margin-bottom: 160px;
+    text-align: center;
+
+  }
+  
+}
