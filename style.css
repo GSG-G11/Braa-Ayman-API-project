@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Redressed&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -29,10 +30,13 @@ body{
     opacity: 0.8;
 }
 .title ,.mainAnime{
-    font-size: 2rem;
+    font-size: 50px;
     margin-bottom: 1rem;
     color: #d65108;
+    font-family: 'Open Sans Condensed', sans-serif;
+
 }
+
 .AniFinder{
     display: flex;
 }
@@ -120,23 +124,30 @@ ol {
     width: 400px;
     height: 360px;
     display: block;
+    transition: all 2s
 }
+
+.anime-img img:hover {
+    transform: scale(.5);
+  }
 .anime-name{
     padding: 1.5rem 0.5rem;
 }
 .anime-name h3{
-    font-size: 1.2rem;
+    font-size:30px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
+
 .synopsis{
     display: block;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     overflow: hidden;
-    height: 160px;
+    height: 100px;
     text-align: justify;
    padding-right: 30px;
    padding-left: 30px;
+   font-family: 'Open Sans Condensed', sans-serif;
 
 }
 .anime-btn{
@@ -156,19 +167,15 @@ ol {
     border-radius: 2rem;
     border-color: none;
     -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    transition: all 0.4s linear;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    -ms-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
+    transition: all 1s linear;
     margin-top: 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
 
 }
 .gifs-btn:hover{
     background: var(--tenne-tawny-dark);
+    background-color: #662806;
+    transform: scale(1.5);
 }
 
 
