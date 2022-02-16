@@ -93,6 +93,7 @@ else{
     aNotFou.classList.add('notFound');
     aNotFou.textContent="Sorry, we didn't find any Anime!"
     aResult.appendChild(aNotFou);
+
 }
    }
    fetch('GET' ,  mainUrl ,mainFun)
