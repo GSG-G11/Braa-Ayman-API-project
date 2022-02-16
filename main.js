@@ -85,6 +85,7 @@ submitBtn.addEventListener('click', ()=>{
 //XML 2
 //anime-details
 aAnime.addEventListener("click", ()=>{
+    // animeDetails.innerHTML='';
     const animeName = input.value;
  const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
   animeDetails.style.display='block'
@@ -111,9 +112,10 @@ aAnime.addEventListener("click", ()=>{
   fetch('GET' ,  galaryUrl ,galaryFun)
 });
 
-//delete details
-animeCloseDe.addEventListener("click",()=>{
-    animeDetails.style.display='None'
-})
+    //delete details
+    animeCloseDe.addEventListener("click",()=>{
+        animeDetails.style.display='None'
+    })
+
 
 
