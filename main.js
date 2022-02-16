@@ -8,6 +8,7 @@ const aAnime = document.querySelector("#anime");
 const animeDetails = document.querySelector(".anime-details");
 const animeCloseDe = document.querySelector("#gif-close-btn");
 const maintitle = document.querySelector(".mainTi");
+const aDetailsDiv = document.querySelector(".gif-details-content");
 
 // submit search when click enter
 input.addEventListener("keyup", function(event) {
@@ -102,19 +103,18 @@ else{
 //XML 2
 //anime-details
 aAnime.addEventListener("click", ()=>{
-    // animeDetails.innerHTML='';
+    aDetailsDiv.innerHTML='';
     const animeName = input.value;
  const galaryUrl= `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
   animeDetails.style.display='block'
-
    const galaryFun = (obj2) =>{
     obj2.data.slice(-5).forEach(e => {
        console.log(obj2)
        console.log(e.images.downsized_medium.url)
 
-       const aDetailsDiv = document.createElement('div');
-       aDetailsDiv.classList.add('gif-details-content');
-       animeDetails.appendChild(aDetailsDiv);
+    //    const aDetailsDiv = document.createElement('div');
+    //    aDetailsDiv.classList.add('gif-details-content');
+    //    animeDetails.appendChild(aDetailsDiv);
 
        const aGifDetailsDiv = document.createElement('div');
        aGifDetailsDiv.classList.add('anime-gif-img');
