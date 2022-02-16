@@ -9,6 +9,13 @@ const animeDetails = document.querySelector(".anime-details");
 const animeCloseDe = document.querySelector("#gif-close-btn");
 const maintitle = document.querySelector(".mainTi");
 
+// submit search when click enter
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     submitBtn.click();
+    }
+  });
 
 //fetch to create XML
 const fetch =(method,url,cb) =>{
@@ -24,7 +31,7 @@ const fetch =(method,url,cb) =>{
     xhr.send();
 }
 
-//when page load the input value = Aot
+// when page load the input value = Aot
 window.onload = () => {
     input.value = `Aot`;
     submitBtn.click();
@@ -40,7 +47,6 @@ submitBtn.addEventListener('click', ()=>{
    const mainFun = (obj1) =>{
   if(obj1.data.length !== 0){
     obj1.data.forEach(e => {
-
   const aCard = document.createElement('div');
   aCard.classList.add('anime-item');
   aAnime.appendChild(aCard);
@@ -56,7 +62,6 @@ submitBtn.addEventListener('click', ()=>{
   const atitleDiv = document.createElement('div');
   atitleDiv.classList.add('anime-name');
   aCard.appendChild(atitleDiv);
-
  
   const atitle = document.createElement('h3');
   atitle.textContent = e.attributes.titles.en_jp
@@ -65,7 +70,6 @@ submitBtn.addEventListener('click', ()=>{
   const asynopsisDiv = document.createElement('div');
   asynopsisDiv.classList.add('synopsis');
   aCard.appendChild(asynopsisDiv);
-
  
   const asynopsis = document.createElement('blockquote');
   asynopsis.textContent = e.attributes.synopsis
@@ -81,12 +85,18 @@ submitBtn.addEventListener('click', ()=>{
   abuttDiv.appendChild(abutt);
     });
 
-}else{
+}
+else{
     aResult.innerHTML='';
     const aNotFou = document.createElement('div');
-    aNotFou.classList.add('notFound');
+    aResult.classList.add('notFound');
     aNotFou.textContent="Sorry, we didn't find any Anime!"
     aResult.appendChild(aNotFou);
+
+    submitBtn.addEventListener("click",()=>{
+    //   return  mainFun();
+    window.location.reload();
+    })
 }
    }
    fetch('GET' ,  mainUrl ,mainFun)
@@ -126,6 +136,7 @@ aAnime.addEventListener("click", ()=>{
     animeCloseDe.addEventListener("click",()=>{
         animeDetails.style.display='None'
     })
+
 
 
 
