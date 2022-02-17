@@ -148,8 +148,8 @@ ol {
 
 .synopsis{
     display: block;
-    /* overflow-y: scroll; */
-    overflow: hidden;
+   overflow-y: scroll;
+    /* overflow: hidden; */
     height: 100px;
     text-align: justify;
    padding-right: 30px;
