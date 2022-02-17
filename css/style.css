@@ -299,7 +299,7 @@ nav {
       flex-direction: row;
     }
   }
-  @media (max-width: 940px) {
+  @media (max-width: 1000px) {
     .nav {
       display: flex;
       flex-direction: row;
