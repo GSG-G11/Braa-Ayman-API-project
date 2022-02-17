@@ -292,12 +292,20 @@ nav {
       flex-direction: column;
     }
   }
+  
   @media (max-width: 420px) {
     .nav {
       display: flex;
       flex-direction: row;
     }
   }
+  @media (max-width: 940px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
 
   .nav a {
     display: flex;
